@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南宮搖光</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Microsoft JhengHei",sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    background:#0f172a;
+}
+
+.sidebar{
+    width:220px;
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(6px);
+    display:flex;
+    flex-direction:column;
+    padding-top:40px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    padding:15px 25px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    color:#00ffff;
+    background:rgba(255,255,255,0.1);
+    box-shadow:0 0 15px rgba(0,255,255,0.8);
+    transform:translateX(5px);
+}
+
+.main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.header{
+    height:80px;
+    display:flex;
+    align-items:center;
+    padding-left:30px;
+    background:rgba(0,0,0,0.5);
+
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    letter-spacing:5px;
+    text-shadow:0 0 10px #00ffff;
+}
+
+.content{
+    flex:1;
+
+    background-image:url("bg/bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+    <a href="index.html">首頁</a>
+    <a href="about me.html">關於我</a>
+    <a href="game.html">遊戲內容</a>
+    <a href="#">聯絡我</a>
+</div>
+
+<div class="main">
+    <div class="header">南宮搖光</div>
+    <div class="content"></div>
+</div>
+
+</body>
+</html>
